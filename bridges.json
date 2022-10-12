@@ -1,0 +1,57 @@
+{
+    "bridges":[
+       {
+          "id":"eng-to-msft",
+          "enabled":true,
+          "groups":[
+             "eng",
+             "eng-msft"
+          ]
+       },
+
+       {
+         "id":"ukr-msft",
+         "enabled":true,
+         "groups":[
+            "ukr",
+            "ukr-msft"
+         ]
+      }             
+    ],
+   
+    "groups": [       
+      {
+         "id": "eng",
+         "type": 1,
+         "name": "eng",
+         "txAudio": {"encoder":25},
+         "rallypoints":[ {"host": {"address":"127.0.0.1", "port":7443}} ]
+      },
+      {
+         "id": "eng-msft",
+         "type": 1,
+         "name": "eng-msft",
+         "txAudio": {"encoder":25},
+	 "tx":{"address":"127.0.0.1","port":60000},
+	 "rx":{"address":"127.0.0.1","port":60002}
+      },
+
+
+      {
+         "id": "ukr",
+         "type": 1,
+         "name": "ukr",
+         "txAudio": {"encoder":25},
+         "rallypoints":[ {"host": {"address":"127.0.0.1", "port":7443}} ]
+      },
+      {
+         "id": "ukr-msft",
+         "type": 1,
+         "name": "ukr-msft",
+         "txAudio": {"encoder":25},
+         "tx":{"address":"127.0.0.1","port":60004},
+         "rx":{"address":"127.0.0.1","port":60006}
+      }
+    ]
+ }
+ 

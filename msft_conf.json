@@ -1,0 +1,68 @@
+{
+   "id": "ebs-msft",
+   "serviceConfigurationFileCheckSecs": 5,
+   "bridgingConfigurationFileCheckSecs": 5,
+   "bridgingConfigurationFileCommand": "",
+   "bridgingConfigurationFileName": "./msft_bridges.json",
+   "certStoreFileName": "./all-rts-certs.certstore",
+   "certStorePasswordHex": "",
+   "mode": 2,
+   "internals": {
+      "disableWatchdog": true,
+      "watchdogHangDetectionMs": 2000,
+      "watchdogIntervalMs": 5000
+   },
+   "multicastTxOptions": {
+      "priority": 4,
+      "ttl": 64
+   },
+   "txOptions": {
+      "priority": 4,
+      "ttl": 64
+   },
+   "requireFips": false,
+   "statusReport": {
+      "enabled": true,
+      "fileName": "./${id}_status.json",
+      "intervalSecs": 5,
+      "includeGroupDetail": true,
+      "includeBridgeDetail": true,
+      "includeBridgeGroupDetail": true,
+      "runCmd": ""
+   },
+   "externalHealthCheckResponder": {
+      "immediateClose": true,
+      "listenPort": 0
+   },
+   "enginePolicy": {
+      "dataDirectory": "",
+      "licensing": {
+         "key": "880E6050010D12535A02A2B1",
+         "activationCode": "",
+         "manufacturerId": "",
+         "entitlement": "{d8d689b8-7f13-48b1-94e0-091e679058d6}"
+      },
+      "networking": {
+         "defaultNic": "lo0"
+      },
+      "security": {
+         "certificate": {
+            "certificate": "@certstore://rtsFactoryDefaultEngage",
+            "key": "@certstore://rtsFactoryDefaultEngage"
+         }
+      },
+      "audio": {
+         "internalRate": 8000,
+         "internalChannels": 1,
+         "allowOutputOnTransmit": true,
+         "muteTxOnTx": false,
+         "enableAec": false
+      },
+      "internals": {
+         "disableWatchdog": false,
+         "watchdogIntervalMs": 5000,
+         "watchdogHangDetectionMs": 2000,
+         "housekeeperIntervalMs": 1000
+      }
+   }
+}

@@ -1,0 +1,37 @@
+{
+        "dataDirectory": "./data/${node_id}",
+
+	"internals":{
+		"watchdog":{
+			"enabled":false
+		},
+		"maxTxSecs":86400
+	},
+
+        "timelines": {
+                "enabled": false,
+                "storageRoot": "",
+                "maxStorageQuotaMb": 20,
+                "maxEventAgeSecs": 86400,
+                "maxEvents": 1000,
+                "ephemeral": false
+        },
+
+        "licensing": {
+                "entitlement": "{d8d689b8-7f13-48b1-94e0-091e679058d6}",
+                "key": "880E6050010D12535A02A2B1",
+                "activationCode": "",
+                "manufacturerId": ""
+        },
+
+        "networking": {
+                "defaultNic": ""
+        },
+
+        "audio": {
+                "internalRate": 8000,
+                "internalChannels": 1,
+                "allowOutputOnTransmit": false,
+                "muteTxOnTx": true
+        }
+}

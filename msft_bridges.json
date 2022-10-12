@@ -1,0 +1,33 @@
+{
+    "bridges":[
+       {
+          "id":"b1",
+          "enabled":true,
+          "groups":[
+             "eng-msft",
+	     "ukr-msft"
+          ]
+       }
+    ],
+   
+    "groups": [       
+      {
+         "id": "eng-msft",
+         "type": 1,
+         "name": "eng-msft",
+         "txAudio": {"encoder":25},
+	 "tx":{"address":"127.0.0.1","port":60002},
+	 "rx":{"address":"127.0.0.1","port":60000}
+      },
+
+      {
+         "id": "ukr-msft",
+         "type": 1,
+         "name": "ukr-msft",
+         "txAudio": {"encoder":25},
+         "tx":{"address":"127.0.0.1","port":60006},
+         "rx":{"address":"127.0.0.1","port":60004}
+      }
+    ]
+ }
+ 

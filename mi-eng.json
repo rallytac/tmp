@@ -1,0 +1,15 @@
+{
+   "id": "mission",
+   "name": "mi",
+   "description": "",
+   "groups": [
+      {
+         "id": "eng",
+         "type": 1,
+         "name": "eng",
+         "txAudio": {"encoder": 25},
+	 "rallypoints":[{"host": {"address":"127.0.0.1", "port":7443}}]
+      }
+   ]
+}
+
